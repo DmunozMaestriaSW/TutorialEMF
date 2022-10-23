@@ -6,4 +6,4 @@ root: intro
 chapters:
 - file: instalacion_emf
 - file: instalacion_sdk
-  - file: new_project
+- file: new_project
