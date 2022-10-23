@@ -4,4 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: instalacion
+- file: instalacion_emf
+- file: instalacion_sdk
+  - file: new_project
