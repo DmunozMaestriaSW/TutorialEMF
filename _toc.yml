@@ -7,3 +7,5 @@ chapters:
 - file: instalacion_emf
 - file: instalacion_sdk
 - file: new_project
+- file: new_model
+- file: exec_model
