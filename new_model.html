@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Mi página 2 &#8212; Tutorial EMF</title>
+    <title>Creación del modelo &#8212; Tutorial EMF</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Probar el modelo" href="exec_model.html" />
+    <link rel="prev" title="Creación del proyecto" href="new_project.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -111,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="instalacion_emf.html">
    Instalación de plugins
@@ -127,8 +129,8 @@ const thebe_selector_output = ".output, .cell_output"
    Creación del proyecto
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="new_model.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Creación del modelo
   </a>
  </li>
@@ -227,7 +229,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpagina2.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnew_model.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -255,7 +257,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/pagina2.md"
+        <a href="_sources/new_model.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -315,13 +317,23 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#subtitulo-1">
-   Subtitulo 1
+  <a class="reference internal nav-link" href="#agregar-los-clasificadores">
+   Agregar los clasificadores
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#subitulo-2">
-   Subitulo 2
+  <a class="reference internal nav-link" href="#cambiar-nombre">
+   Cambiar nombre
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agregar-atributos">
+   Agregar atributos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generar-del-codigo-del-modelo">
+   Generar del código del modelo
   </a>
  </li>
 </ul>
@@ -333,7 +345,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Mi página 2</h1>
+                <h1>Creación del modelo</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -344,13 +356,23 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#subtitulo-1">
-   Subtitulo 1
+  <a class="reference internal nav-link" href="#agregar-los-clasificadores">
+   Agregar los clasificadores
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#subitulo-2">
-   Subitulo 2
+  <a class="reference internal nav-link" href="#cambiar-nombre">
+   Cambiar nombre
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agregar-atributos">
+   Agregar atributos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generar-del-codigo-del-modelo">
+   Generar del código del modelo
   </a>
  </li>
 </ul>
@@ -363,16 +385,52 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="mi-pagina-2">
-<h1>Mi página 2<a class="headerlink" href="#mi-pagina-2" title="Permalink to this headline">#</a></h1>
-<p>Bienvenido, en la página 2 puedes encontrar lo siguiente:</p>
-<section id="subtitulo-1">
-<h2>Subtitulo 1<a class="headerlink" href="#subtitulo-1" title="Permalink to this headline">#</a></h2>
-<p>Mi contenido 1</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="creacion-del-modelo">
+<h1>Creación del modelo<a class="headerlink" href="#creacion-del-modelo" title="Permalink to this headline">#</a></h1>
+<p>Una vez instalado creado el proyecto, procedemos a crear el modelo, en la misma pantalla que nos abre el IDE. En la parte derecha tenemos disponible la paleta en donde se encuentran los diferemtes clasificadores, relaciones y demás.</p>
+<p><img alt="paleta" src="_images/013.png" /></p>
+<p>Para el ejemplo, vamos a sar el clasificador “Class” y en relaciones “Composition”.</p>
+<section id="agregar-los-clasificadores">
+<h2>Agregar los clasificadores<a class="headerlink" href="#agregar-los-clasificadores" title="Permalink to this headline">#</a></h2>
+<p>Hacemos clic en el clasificador “Class” y luego en un área libre del diagrama para agregarlo.</p>
 </section>
-<section id="subitulo-2">
-<h2>Subitulo 2<a class="headerlink" href="#subitulo-2" title="Permalink to this headline">#</a></h2>
-<p>Mi contenido 2</p>
+<section id="cambiar-nombre">
+<h2>Cambiar nombre<a class="headerlink" href="#cambiar-nombre" title="Permalink to this headline">#</a></h2>
+<p>Seleccionar un clasificador agregado y en la parte inferior se despliega las propiedades. En la parte del nombre ingresar según sea el caso.</p>
+</section>
+<section id="agregar-atributos">
+<h2>Agregar atributos<a class="headerlink" href="#agregar-atributos" title="Permalink to this headline">#</a></h2>
+<ul>
+<li><p>Seleccionar un calsificador agregado y se desplegará un menú, del que se debe seleccionar el ícono [-].</p>
+<p><img alt="Paso 1" src="_images/042.png" /></p>
+</li>
+<li><p>En las propiedades cambie el nombre del atributo</p>
+<p><img alt="Paso 1" src="_images/052.png" /></p>
+</li>
+<li><p>En la propiedades, seleccione el botón […] ubicado junto a EType.</p>
+<p><img alt="Paso 1" src="_images/062.png" /></p>
+</li>
+<li><p>En el listado seleccione el tipo adecuado a al atributo, en este caso string.</p>
+<p><img alt="Paso 1" src="_images/07.png" /></p>
+</li>
+<li><p>Luego para agregar un relación de composición desde estudiante hacia matrícula, cambiar el nombre a matrículas. De esta manera el digrama queda así:</p>
+<p><img alt="Paso 1" src="_images/081.png" /></p>
+</li>
+</ul>
+</section>
+<section id="generar-del-codigo-del-modelo">
+<h2>Generar del código del modelo<a class="headerlink" href="#generar-del-codigo-del-modelo" title="Permalink to this headline">#</a></h2>
+<p>Primero abrimos el archivo .genmodel como se mestra a continuación:</p>
+<p><img alt="Paso 1" src="_images/09.png" /></p>
+<p>Haciendo clic sobre el modelo (Sgamodel) se despliegan las opciones:</p>
+<ul class="simple">
+<li><p>Generate Model Code</p></li>
+<li><p>Generate Edit Code</p></li>
+<li><p>Generate Editor Code</p></li>
+</ul>
+<p><img alt="Paso 1" src="_images/10.png" /></p>
+<p>Ejecutar una a una las opciones en el mismo orden, de tal manera que se crean los proyectos .edit y .editor</p>
+<p><img alt="Paso 1" src="_images/11.png" /></p>
 </section>
 </section>
 
@@ -403,6 +461,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="new_project.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Creación del proyecto</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="exec_model.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Probar el modelo</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
