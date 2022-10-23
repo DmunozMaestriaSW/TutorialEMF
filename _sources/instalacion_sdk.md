@@ -1,4 +1,4 @@
-# Instalacin de Eclipse SDK
+# Instalación de Eclipse SDK
 
 En esta sección se muestra los pasos para instalar el SDK de Eclipse con la finalidad de probar el modelado.
 
