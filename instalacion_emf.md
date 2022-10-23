@@ -1,4 +1,4 @@
-# Instalacin de plugins
+# Instalación de plugins
 
 En esta sección se muestra los pasos para instalar los plugins EMF.
 
